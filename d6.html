@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C Programming Interview Questions</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #087464;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        color: #ffffff;
+      }
+      h2 {
+        color: #087464;
+      }
+      .question {
+        margin: 10px 0;
+        cursor: pointer;
+        padding: 10px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+      }
+      .answer {
+        display: none;
+        padding: 10px;
+        border-left: 3px solid #087464;
+        background: #ffffff;
+      }
+    </style>
+    <script>
+      function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>C Programming Interview Questions</h1>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>Introduction to C Programming</h2>
+        <p>
+          C is a low-level, general-purpose programming language that was
+          developed in the early 1970s by Dennis Ritchie. It is widely used for
+          system programming, application development, and embedded systems.
+        </p>
+        <p>
+          Here are some common questions and answers to help you prepare for a C
+          programming interview:
+        </p>
+      </section>
+
+      <section>
+        <div class="question" onclick="toggleAnswer('answer1')">
+          1. What are the data types in C programming?
+        </div>
+        <div class="answer" id="answer1">
+          The basic data types in C are: int, float, double, char, short, long,
+          and void. C also supports derived data types such as arrays, pointers,
+          structures, and unions.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer2')">
+          2. Explain the difference between a pointer and an array in C.
+        </div>
+        <div class="answer" id="answer2">
+          A pointer is a variable that stores the memory address of another
+          variable, while an array is a collection of elements of the same data
+          type stored in contiguous memory locations.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer3')">
+          3. What is the purpose of the malloc() function in C?
+        </div>
+        <div class="answer" id="answer3">
+          The malloc() function is used to dynamically allocate a block of
+          memory in the heap. It returns a pointer to the allocated memory,
+          which can be used to store data at runtime.
+        </div>
+
+        <!-- Add more questions in the same format -->
+
+        <div class="question" onclick="toggleAnswer('answer40')">
+          40. Explain the concept of function pointers in C.
+        </div>
+        <div class="answer" id="answer40">
+          Function pointers in C are pointers that can hold the address of a
+          function. They can be used to pass functions as arguments to other
+          functions, create callback functions, and implement function tables.
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Learning Interview Questions</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #087464;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        color: #ffffff;
+      }
+      h2 {
+        color: #087464;
+      }
+      .question {
+        margin: 10px 0;
+        cursor: pointer;
+        padding: 10px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+      }
+      .answer {
+        display: none;
+        padding: 10px;
+        border-left: 3px solid #087464;
+        background: #ffffff;
+      }
+    </style>
+    <script>
+      function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Machine Learning Interview Questions</h1>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>Introduction to Machine Learning</h2>
+        <p>
+          Machine learning is a field of artificial intelligence that uses
+          statistical techniques to give computer systems the ability to "learn"
+          from data, without being explicitly programmed. The goal of machine
+          learning is to create algorithms that can make predictions or
+          decisions based on data.
+        </p>
+        <p>
+          Here are some common questions and answers to help you prepare for a
+          machine learning interview:
+        </p>
+      </section>
+
+      <section>
+        <div class="question" onclick="toggleAnswer('answer1')">
+          1. What is the difference between supervised and unsupervised
+          learning?
+        </div>
+        <div class="answer" id="answer1">
+          Supervised learning uses labeled data to train models, while
+          unsupervised learning uses unlabeled data to find hidden patterns.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer2')">
+          2. Explain the bias-variance tradeoff.
+        </div>
+        <div class="answer" id="answer2">
+          Bias refers to errors due to overly simplistic models, while variance
+          refers to errors due to models being too complex. The tradeoff
+          involves finding a balance to minimize total error.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer3')">
+          3. What is overfitting and how can you prevent it?
+        </div>
+        <div class="answer" id="answer3">
+          Overfitting occurs when a model learns the noise in the training data.
+          It can be prevented by using techniques such as cross-validation,
+          pruning, regularization, and using more training data.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer4')">
+          4. What is the difference between classification and regression
+          problems?
+        </div>
+        <div class="answer" id="answer4">
+          Classification problems involve predicting discrete or categorical
+          outputs, while regression problems involve predicting continuous
+          outputs. The choice of model and evaluation metrics depends on the
+          problem type.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer5')">
+          5. What are the main steps in a machine learning project?
+        </div>
+        <div class="answer" id="answer5">
+          The main steps in a machine learning project are: problem definition,
+          data collection and preprocessing, model selection and training, model
+          evaluation, and model deployment.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer6')">
+          6. Explain the concept of ensemble methods in machine learning.
+        </div>
+        <div class="answer" id="answer6">
+          Ensemble methods combine multiple models to improve the overall
+          performance. Examples include bagging, boosting, and stacking, which
+          can help reduce bias and variance compared to individual models.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer7')">
+          7. What is the purpose of feature engineering in machine learning?
+        </div>
+        <div class="answer" id="answer7">
+          Feature engineering involves creating or selecting the most
+          informative features from raw data to improve the performance of
+          machine learning models. It's a crucial step in the machine learning
+          pipeline.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer8')">
+          8. Explain the difference between supervised and unsupervised
+          dimensionality reduction techniques.
+        </div>
+        <div class="answer" id="answer8">
+          Supervised techniques, like Linear Discriminant Analysis (LDA), use
+          labeled data to find the most discriminative features. Unsupervised
+          techniques, like Principal Component Analysis (PCA), find the most
+          informative features without using labels.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer9')">
+          9. What is the purpose of a confusion matrix in classification
+          problems?
+        </div>
+        <div class="answer" id="answer9">
+          A confusion matrix provides a detailed breakdown of the performance of
+          a classification model, showing the number of true positives, true
+          negatives, false positives, and false negatives. It helps in
+          evaluating the model's accuracy, precision, recall, and F1-score.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer10')">
+          10. Explain the concept of transfer learning in machine learning.
+        </div>
+        <div class="answer" id="answer10">
+          Transfer learning involves using a model trained on one task as a
+          starting point for a model on a different but related task. This can
+          be useful when you have limited data for the target task, as it allows
+          you to leverage knowledge from a related domain.
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

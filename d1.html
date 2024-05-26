@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Aptitude and HR Interview Questions</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #087464;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        color: #ffffff;
+      }
+      h2 {
+        color: #087464;
+      }
+      .question {
+        margin: 10px 0;
+        cursor: pointer;
+        padding: 10px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+      }
+      .answer {
+        display: none;
+        padding: 10px;
+        border-left: 3px solid #087464;
+        background: #ffffff;
+      }
+    </style>
+    <script>
+      function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Technical Aptitude and HR Interview Questions</h1>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          This website covers a range of questions that are commonly asked
+          during technical aptitude and HR interviews. These questions are
+          designed to assess your problem-solving skills, critical thinking
+          abilities, and personality traits.
+        </p>
+      </section>
+
+      <section>
+        <h2>Technical Aptitude Questions</h2>
+        <div class="question" onclick="toggleAnswer('answer1')">
+          1. What is the difference between RAM and ROM?
+        </div>
+        <div class="answer" id="answer1">
+          RAM (Random Access Memory) is a volatile memory that can be read from
+          and written to, while ROM (Read-Only Memory) is a non-volatile memory
+          that can only be read from. RAM is used for temporary data storage,
+          while ROM is used for storing permanent data like BIOS.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer2')">
+          2. Explain the purpose of a circuit breaker.
+        </div>
+        <div class="answer" id="answer2">
+          A circuit breaker is an electrical safety device that automatically
+          interrupts the flow of electricity in a circuit when it detects a
+          fault or an overload. This helps to protect electrical equipment and
+          prevent potential fires or other hazards.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer3')">
+          3. What is the difference between TCP and UDP?
+        </div>
+        <div class="answer" id="answer3">
+          TCP (Transmission Control Protocol) is a connection-oriented protocol
+          that ensures reliable data transfer, while UDP (User Datagram
+          Protocol) is a connectionless protocol that does not guarantee
+          reliable data delivery. TCP is more suitable for applications that
+          require error-free data transfer, while UDP is better for real-time
+          applications that can tolerate some data loss.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer4')">
+          4. Explain the concept of binary search.
+        </div>
+        <div class="answer" id="answer4">
+          Binary search is a divide-and-conquer algorithm used to find the
+          position of a target value within a sorted array. It works by
+          repeatedly dividing the search interval in half until the target value
+          is found or the search space is exhausted. Binary search is more
+          efficient than linear search for sorted arrays.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer5')">
+          5. What is the purpose of an operating system?
+        </div>
+        <div class="answer" id="answer5">
+          An operating system is the software that manages the hardware
+          resources of a computer and provides a platform for running
+          applications. It handles tasks such as memory management, process
+          scheduling, file management, and input/output operations, making it
+          easier for users and programs to interact with the computer.
+        </div>
+
+        <h2>HR Interview Questions</h2>
+        <div class="question" onclick="toggleAnswer('answer6')">
+          6. What are your strengths and weaknesses?
+        </div>
+        <div class="answer" id="answer6">
+          When answering this question, focus on highlighting your relevant
+          strengths that are valuable for the role, and discuss how you are
+          working to improve on your weaknesses. Provide specific examples to
+          support your answers.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer7')">
+          7. Why are you interested in this position?
+        </div>
+        <div class="answer" id="answer7">
+          Explain your genuine interest in the role and the company,
+          highlighting how your skills, experience, and career goals align with
+          the position. Demonstrate your enthusiasm and commitment to
+          contributing to the organization's success.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer8')">
+          8. How do you handle stress and pressure?
+        </div>
+        <div class="answer" id="answer8">
+          Discuss effective strategies you use to manage stress, such as
+          prioritizing tasks, taking breaks, practicing time management, and
+          maintaining a positive attitude. Emphasize your ability to remain calm
+          and focused under pressure.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer9')">
+          9. Can you tell me about a time when you had to work in a team?
+        </div>
+        <div class="answer" id="answer9">
+          Provide a specific example of a successful team project you've been
+          part of. Highlight your collaboration skills, ability to communicate
+          effectively, and your contribution to the team's overall success.
+          Demonstrate your understanding of the importance of teamwork in the
+          workplace.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer10')">
+          10. Where do you see yourself in the next 5 years?
+        </div>
+        <div class="answer" id="answer10">
+          Share your long-term career goals and aspirations that are aligned
+          with the company's growth and the position you're applying for.
+          Explain how this role fits into your overall professional development
+          plan and how you plan to contribute to the organization's success over
+          time.
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

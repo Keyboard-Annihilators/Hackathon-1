@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Structures Interview Questions</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #087464;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        color: #ffffff;
+      }
+      h2 {
+        color: #087464;
+      }
+      .question {
+        margin: 10px 0;
+        cursor: pointer;
+        padding: 10px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+      }
+      .answer {
+        display: none;
+        padding: 10px;
+        border-left: 3px solid #087464;
+        background: #ffffff;
+      }
+    </style>
+    <script>
+      function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Data Structures Interview Questions</h1>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>Introduction to Data Structures</h2>
+        <p>
+          Data structures are the fundamental building blocks of any computer
+          program. They are used to organize and store data in a way that makes
+          it efficient to access, modify, and maintain.
+        </p>
+        <p>
+          Here are some common questions and answers to help you prepare for a
+          data structures interview:
+        </p>
+      </section>
+
+      <section>
+        <div class="question" onclick="toggleAnswer('answer1')">
+          1. What is an array and what are its time complexities?
+        </div>
+        <div class="answer" id="answer1">
+          An array is a collection of elements of the same data type stored in
+          contiguous memory locations. The time complexities for common array
+          operations are: Accessing an element - O(1), Inserting/Deleting at the
+          end - O(1), Inserting/Deleting at the beginning/middle - O(n).
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer2')">
+          2. Explain the difference between a stack and a queue.
+        </div>
+        <div class="answer" id="answer2">
+          A stack is a Last-In-First-Out (LIFO) data structure, where elements
+          are added and removed from the top. A queue is a First-In-First-Out
+          (FIFO) data structure, where elements are added at the rear and
+          removed from the front.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer3')">
+          3. What is a linked list and what are its time complexities?
+        </div>
+        <div class="answer" id="answer3">
+          A linked list is a collection of nodes, where each node contains data
+          and a reference to the next node. The time complexities for common
+          linked list operations are: Accessing an element - O(n), Inserting/
+          Deleting at the beginning - O(1), Inserting/Deleting at the end -
+          O(n).
+        </div>
+
+        <!-- Add more questions in the same format -->
+
+        <div class="question" onclick="toggleAnswer('answer40')">
+          40. Explain the purpose and implementation of a binary search tree.
+        </div>
+        <div class="answer" id="answer40">
+          A binary search tree is a tree-based data structure where each node
+          has at most two child nodes. The left child is less than the parent,
+          and the right child is greater than the parent. This structure allows
+          for efficient search, insertion, and deletion operations.
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Programming Interview Questions</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 0;
+        }
+        header {
+          background: #087464;
+          color: #ffffff;
+          padding: 10px 0;
+          text-align: center;
+        }
+        .container {
+          padding: 20px;
+        }
+        h1 {
+          color: #ffffff;
+        }
+        h2 {
+          color: #087464;
+        }
+        .question {
+          margin: 10px 0;
+          cursor: pointer;
+          padding: 10px;
+          background: #ffffff;
+          border: 1px solid #ddd;
+        }
+        .answer {
+          display: none;
+          padding: 10px;
+          border-left: 3px solid #087464;
+          background: #ffffff;
+        }
+      </style>
+    <script>
+      function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Java Programming Interview Questions</h1>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>Introduction to Java</h2>
+        <p>
+          Java is a high-level, object-oriented programming language developed
+          by Sun Microsystems (now owned by Oracle). It is widely used for
+          building a variety of applications, from desktop applications to
+          mobile apps and enterprise-level software.
+        </p>
+        <p>
+          Here are some common questions and answers to help you prepare for a
+          Java programming interview:
+        </p>
+      </section>
+
+      <section>
+        <div class="question" onclick="toggleAnswer('answer1')">
+          1. What are the key features of Java?
+        </div>
+        <div class="answer" id="answer1">
+          Key features of Java include: object-oriented programming, platform
+          independence (write once, run anywhere), automatic memory management
+          (garbage collection), strong type checking, and a rich standard
+          library.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer2')">
+          2. Explain the difference between an abstract class and an interface.
+        </div>
+        <div class="answer" id="answer2">
+          Abstract classes can have both abstract and non-abstract (concrete)
+          methods, and they can have instance variables. Interfaces, on the
+          other hand, can only have abstract methods and constant variables.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer3')">
+          3. What is the purpose of the final keyword in Java?
+        </div>
+        <div class="answer" id="answer3">
+          The final keyword in Java can be used to: 1) declare a constant
+          variable that cannot be reassigned, 2) prevent a class from being
+          extended, and 3) prevent a method from being overridden in subclasses.
+        </div>
+
+        <!-- Add more questions in the same format -->
+
+        <div class="question" onclick="toggleAnswer('answer40')">
+          40. Explain the concept of exception handling in Java.
+        </div>
+        <div class="answer" id="answer40">
+          Exception handling in Java allows you to write code that can handle
+          unexpected events or errors gracefully, instead of causing the program
+          to crash. Java has built-in exception classes, and you can also create
+          custom exception classes.
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

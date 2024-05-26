@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Science Interview Questions</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #087464;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        color: #ffffff;
+      }
+      h2 {
+        color: #087464;
+      }
+      .question {
+        margin: 10px 0;
+        cursor: pointer;
+        padding: 10px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+      }
+      .answer {
+        display: none;
+        padding: 10px;
+        border-left: 3px solid #087464;
+        background: #ffffff;
+      }
+    </style>
+    <script>
+      function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Data Science Interview Questions</h1>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>Introduction to Data Science</h2>
+        <p>
+          Data Science is an interdisciplinary field that combines statistics,
+          mathematics, computer science, and domain-specific knowledge to
+          extract insights and knowledge from data.
+        </p>
+        <p>
+          Here are some common questions and answers to help you prepare for a
+          Data Science interview:
+        </p>
+      </section>
+
+      <section>
+        <div class="question" onclick="toggleAnswer('answer1')">
+          1. What is the difference between structured, semi-structured, and
+          unstructured data?
+        </div>
+        <div class="answer" id="answer1">
+          Structured data is data that follows a predefined schema and can be
+          easily stored and queried in a relational database. Semi-structured
+          data, like XML or JSON, has some structure but is more flexible.
+          Unstructured data, such as text or images, does not have a pre-defined
+          format.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer2')">
+          2. Explain the purpose of data cleaning and preprocessing in data
+          science.
+        </div>
+        <div class="answer" id="answer2">
+          Data cleaning and preprocessing involve tasks like handling missing
+          values, removing duplicates, transforming data, and performing feature
+          engineering. This is a crucial step in the data science process, as it
+          ensures the data is of high quality and suitable for analysis.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer3')">
+          3. What is the difference between descriptive, predictive, and
+          prescriptive analytics?
+        </div>
+        <div class="answer" id="answer3">
+          Descriptive analytics focuses on summarizing and describing the
+          current or historical state of the data. Predictive analytics uses
+          models to forecast future outcomes. Prescriptive analytics provides
+          recommendations on the best course of action to achieve desired
+          outcomes.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer4')">
+          4. Explain the importance of data visualization in data science.
+        </div>
+        <div class="answer" id="answer4">
+          Data visualization is crucial for data scientists to effectively
+          communicate insights and findings to stakeholders. By presenting data
+          in visual formats, such as charts, graphs, and dashboards, data
+          scientists can help decision-makers understand complex information and
+          patterns more easily.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer5')">
+          5. What is the role of domain knowledge in data science projects?
+        </div>
+        <div class="answer" id="answer5">
+          Domain knowledge is essential for data scientists to understand the
+          context and business requirements of a problem, ask the right
+          questions, and interpret the findings in a meaningful way. Effective
+          data science projects often require close collaboration between data
+          scientists and subject matter experts.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer6')">
+          6. Explain the concept of data pipelines in data science.
+        </div>
+        <div class="answer" id="answer6">
+          Data pipelines are a series of data processing steps, often automated,
+          that ingest, transform, and load data from various sources into a
+          target system or data store. Well-designed pipelines ensure
+          consistent, reliable, and scalable data processing for data science
+          and analytics applications.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer7')">
+          7. What is the purpose of A/B testing in data science?
+        </div>
+        <div class="answer" id="answer7">
+          A/B testing is a method for comparing two or more versions of a
+          product, feature, or marketing campaign to determine which one
+          performs better. It is a powerful tool for data scientists to validate
+          hypotheses and make data-driven decisions.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer8')">
+          8. Explain the concept of feature engineering in data science.
+        </div>
+        <div class="answer" id="answer8">
+          Feature engineering is the process of creating or selecting the most
+          informative features from raw data to improve the performance of
+          machine learning models. It involves tasks like data transformation,
+          selection, and creation to extract the most relevant information from
+          the data.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer9')">
+          9. What is the difference between supervised and unsupervised learning
+          in the context of data science?
+        </div>
+        <div class="answer" id="answer9">
+          Supervised learning involves training a model on labeled data to make
+          predictions or classifications, while unsupervised learning involves
+          finding patterns and structures in unlabeled data. Supervised learning
+          is often used for predictive modeling, while unsupervised learning is
+          useful for exploratory data analysis and clustering.
+        </div>
+
+        <div class="question" onclick="toggleAnswer('answer10')">
+          10. Explain the importance of data ethics and privacy in data science.
+        </div>
+        <div class="answer" id="answer10">
+          Data scientists must ensure that data is collected, processed, and
+          used in an ethical and responsible manner, respecting individual
+          privacy and adhering to relevant regulations and guidelines. This
+          includes considerations around data privacy, bias, and the potential
+          societal impact of data-driven insights and decisions.
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
